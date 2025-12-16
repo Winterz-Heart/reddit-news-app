@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Reddit News App
+A Website that shows the top new posts from r/news and r/worldnews
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Intro
+This repository contains my attempt at making a website that show the latest news post from r/news and r/worldnews from Reddit. This will include the entire process from start to finish, with my planning process and planning the basic layout of the webiste, the commits that I make along the way as well as the reasoning behind any major changes that I make.
 
-## Available Scripts
+### Planning
+I will be using React as the main structure for the website and will be using Reddit API documentation in order to connect the website to Reddit so that it can display the posts.
 
-In the project directory, you can run:
+I have used the command ```npx create-react-app``` to make the app to start the whole process off, which has allowed me to write the README.md file that I am currently writing.
 
-### `npm start`
+Before I got started on making the wireframe for the website, I looked into what the standard width of websites tend to be, as the height doesn't matter as much due to scrolling. Based on the information from [this article](https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design) it is best practice to design the website with a mobile based layout in mind and scale it up to a desktop sizing, with multiple breakpoints adjusting the layout as the size available changes. I've decided to have the website's layout based on 4 different widths, these are:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+|       Device       | Size(px) |
+|--------------------|----------|
+|Mobile              |    360   |
+|Tablet(Vertical)    |    768   |
+|Tablet(Horizontal)  |   1024   |
+|Desktop             |   1920   |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Installation
+1. ```git clone https://github.com/Winterz-Heart/reddit-news-app```
+2. ```cd reddit-news-app```
+3. ```npm install```
+4. ```npm start```
