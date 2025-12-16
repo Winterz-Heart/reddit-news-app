@@ -32,7 +32,7 @@ Before I got started on making the wireframe for the website, I looked into what
 ### Wireframing
 Using Figma, I created a wireframe for each of the widths above. On the Mobile and the Vertical Tablet sizes I had the feed selection be a side bar that pops out as required whilst on the other two, as the screen has a lot of space to spare, I have them permanently on screen.
 
-![Wireframe](/README_images/Reddit%20News%20App%20Wireframe.jpg)
+![Wireframe](/Planning_documents//Reddit%20News%20App%20Wireframe.jpg)
 
 
 ## Installation

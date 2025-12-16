@@ -1,0 +1,74 @@
+Navbar
+└ App name (Centred on Navbar)
+
+└ Feeds Button (Brings up all feed options)
+  └ All Feeds
+    └ Logo for All Feeds
+    └ Text for All Feeds
+
+  └ r/news Feed
+    └ Logo for news Feed
+    └ Text for news Feed
+
+  └ r/world news Feed
+    └ Logo for world news Feed
+    └ Text for world news Feed
+
+
+Main Page
+└ Post Card
+  └ Feed Location (Where its from)
+    └ Feed Logo
+    └ Feed Name
+    └ Time Since it was Posted
+
+  └ Post Title
+
+  └ Post Image with Link
+
+  └ Vote Counter
+    └ Upvote symbol (Will be lit up if votes are positive)
+    └ Count
+    └ Downvote Symbol (Will be lit up if votes are negative)
+
+  └ Comment Counter
+    └ Comment symbol
+    └ Count
+
+Post Page
+└ Back Button (go back to the feed)
+
+└ Feed Location (Where its from)
+  └ Feed Logo
+  └ Feed Name
+  └ Time Since it was Posted
+
+└ Post Title
+
+└ Post Image with Link
+
+└ Vote Counter
+  └ Upvote symbol (Will be lit up if votes are positive)
+  └ Count
+  └ Downvote Symbol (Will be lit up if votes are negative)
+
+└ Comment Counter
+    └ Comment symbol
+    └ Count
+
+└ Comments
+  └ Commenter Info
+    └ Commenter image
+    └ Commenter name
+    └ Time since Posted
+
+  └ Hide Comment Button (shrinks comment down to single line, showing only Commenter name and time since posted. commenter image replaced with a show button)
+  └ Show Comment Button (Hidden until comment is hidden)
+
+  └ Comment Content
+    └ Vote Counter
+      └ Upvote symbol (Will be lit up if votes are positive)
+      └ Count
+      └ Downvote Symbol (Will be lit up if votes are negative)
+      └ Replies
+        └ Same Content as Comment, repeating till reply chain ends
