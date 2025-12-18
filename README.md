@@ -1,9 +1,9 @@
 # Reddit News App
-A Website that shows the top new posts from r/news and r/worldnews
+A Website that shows the top posts of the past week from r/news and r/worldnews
 
 
 ## Intro
-This repository contains my attempt at making a website that shows the latest news post from r/news and r/worldnews from Reddit. This will include the entire process from start to finish, with my planning process and planning the basic layout of the website, the commits that I make along the way as well as the reasoning behind any major changes that I make.
+This repository contains my attempt at making a website that shows the posts of the past week from r/news and r/worldnews from Reddit. This will include the entire process from start to finish, with my planning process and planning the basic layout of the website, the commits that I make along the way as well as the reasoning behind any major changes that I make.
 
 
 ## Planning
@@ -51,8 +51,9 @@ With the wireframing done for the Website, I then made a Component tree in order
 - Hide/Show Comment button
 
 ### Data from Reddit
+After looking at Reddits Devvit and ways to get the info from the website, the best method I can access is one that is refered to as Scraping, where you use the subreddits or posts web address and add ```.json``` to the end of it to get the data for the page. My best bet for the feeds part of my project would be to scrape the subreddits themselves for data for post cards (for example: https://www.reddit.com/r/news/top/?t=week.json) and when switching to an indvidual post, using the post id to access the post to scrape the posts data for all of the comments (for example: https://www.reddit.com/r/news/comments/1pk10fm.json).
 
-After looking at Reddits Devvit and ways to get the info from thw website, the best method I can access is one that is refered to as Scraping, where you use the subreddits or posts web address and add ```.json``` to the end of it to get the data for the page. My best bet for the feeds part of my project would be to scrape the subreddits themselves for data for post cards and when switching to an indvidual post, using the post id to access the post to scrape the posts data for all of the comments.
+Whilst viewing r/news I realised that sorting it by top post of the past week, most of the time it prioritses older posts to be shwon as, the longer that they have been uploaded, to more upvotes they wil have gotten. A better way to sort the subreddits by hot, as orders the posts by the amount of engamenet that they have had, upvotes and comments, since they were posted.
 
 ## Technologies used
 
