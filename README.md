@@ -52,7 +52,7 @@ With the wireframing done for the Website, I then made a Component tree in order
 
 ### Data from Reddit
 
-After looking at Reddits Devvit and ways to get the info from thw website, the best method I can access is one that is refered to as Scraping, where you use the subreddits or posts web address and add ```.json``` to the end of it to get the data for the page. My best bet for the feeds part of my project would be to scrape the subreddits themselves for data for post cards and when switching to an indvidual post, using the post id to scrape the posts data for all of the comments.
+After looking at Reddits Devvit and ways to get the info from thw website, the best method I can access is one that is refered to as Scraping, where you use the subreddits or posts web address and add ```.json``` to the end of it to get the data for the page. My best bet for the feeds part of my project would be to scrape the subreddits themselves for data for post cards and when switching to an indvidual post, using the post id to access the post to scrape the posts data for all of the comments.
 
 ## Technologies used
 
