@@ -2,11 +2,11 @@
 A Website that shows the top new posts from r/news and r/worldnews
 
 
-### Intro
+## Intro
 This repository contains my attempt at making a website that shows the latest news post from r/news and r/worldnews from Reddit. This will include the entire process from start to finish, with my planning process and planning the basic layout of the website, the commits that I make along the way as well as the reasoning behind any major changes that I make.
 
 
-### Planning
+## Planning
 I will be using React as the main structure for the website and will be using Reddit API documentation in order to connect the website to Reddit so that it can display the posts.
 
 
@@ -49,6 +49,17 @@ With the wireframing done for the Website, I then made a Component tree in order
 - Comments
 - Commenter info
 - Hide/Show Comment button
+
+### Data from Reddit
+
+After looking at Reddits Devvit and ways to get the info from thw website, the best method I can access is one that is refered to as Scraping, where you use the subreddits or posts web address and add ```.json``` to the end of it to get the data for the page. My best bet for the feeds part of my project would be to scrape the subreddits themselves for data for post cards and when switching to an indvidual post, using the post id to scrape the posts data for all of the comments.
+
+## Technologies used
+
+1. React
+    - Used to make the User Interface
+
+
 
 ## Installation
 1. ```git clone https://github.com/Winterz-Heart/reddit-news-app```
