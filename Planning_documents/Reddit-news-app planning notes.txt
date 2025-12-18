@@ -1,7 +1,7 @@
 Navbar
 └ App name (Centred on Navbar)
 
-└ Feeds Button (Brings up all feed options)
+└ Feeds Button (Brings up all of feed options)
   └ All Feeds
     └ Logo for All Feeds
     └ Text for All Feeds
@@ -13,6 +13,8 @@ Navbar
   └ r/world news Feed
     └ Logo for world news Feed
     └ Text for world news Feed
+  
+  └ Feeds button turn into back button when a post is selected
 
 
 Main Page
