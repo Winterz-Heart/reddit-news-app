@@ -35,7 +35,7 @@ Using Figma, I created a wireframe for each of the widths above. On the Mobile a
 ![Wireframe](/Planning_documents//Reddit%20News%20App%20Wireframe.jpg)
 
 ### Component Tree
-With the wireframing done for the Website, I then made a Component tree in order to see how many componenets I would need as well as how they all connect to each other. [Here](./Planning_documents/Reddit-news-app%20planning%20notes.txt) is the Component tree it self and the Individual components that I need to make the apllication are:
+With the wireframing done for the Website, I then made a Component tree in order to see how many componenets I would need as well as how they all connect to each other. [Here](./Planning_documents/Reddit-news-app%20planning%20notes.txt) is the Component tree it self and the Individual components that I need to make the appllication are:
 - Navbar
 - Feeds button
 - Feeds Sidebar
