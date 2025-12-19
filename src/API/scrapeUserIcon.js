@@ -3,7 +3,7 @@ export async function getUserIcon(username) {
     if (username === '[deleted]') return null;
     const url = `https://www.reddit.com/user/${username}/about.json`
     const headers = {
-        'User-Agent': 'Winterz-heart/Subreddit-Scraper'
+        'User-Agent': 'Winterz-heart/User-Icon-Scraper'
     }
     try {
         const response = await fetch(url, { headers });

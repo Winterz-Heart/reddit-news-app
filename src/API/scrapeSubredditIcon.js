@@ -1,7 +1,7 @@
 export async function getSubredditIcon(subreddit) {
         const url = `https://www.reddit.com/r/${subreddit}/about.json`
         const headers = {
-            'User-Agent': 'Winterz-heart/Post-Comments-Scraper'
+            'User-Agent': 'Winterz-heart/Subredit-Icon-Scraper'
         }
         try {
             const response = await fetch(url, { headers })
