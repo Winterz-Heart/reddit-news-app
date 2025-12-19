@@ -1,3 +1,6 @@
+import { getUserIcon } from "./scrapeUserIcon.js";
+import { getSubredditIcon } from "./scrapeSubredditIcon.js";
+
 export async function scrapeSubredditJson(subreddit, sort='hot', limit=100, timeframe='all') {
     const url = `https://www.reddit.com/r/${subreddit}/${sort}.json`;
     const headers = {
@@ -15,16 +18,20 @@ export async function scrapeSubredditJson(subreddit, sort='hot', limit=100, time
 
         for (const child of data.data.children) {
             const post = child.data;
+            const authorIcon = await getUserIcon(post.author || '[deleted]');
+            const subredditIcon = await getSubredditIcon(post.subreddit)
             posts.push({
                 id: post.id,
                 title: post.title,
                 author: post.author || '[deleted]',
+                authorIcon: authorIcon,
                 created_utc: new Date(post.created_utc * 1000),
                 score: post.score,
                 num_comments: post.num_comments,
                 url: post.url,
                 selftext: post.selftext || '',
                 subreddit: post.subreddit,
+                subredditIcon: subredditIcon,
                 permalink: `https://www.reddit.com${post.permalink}`
             })
         }
