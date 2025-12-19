@@ -59,6 +59,8 @@ Whilst viewing r/news I realised that sorting it by top post of the past week, m
 
 1. React
     - Used to make the User Interface
+2. React Router
+    - Used to navigate between pages
 
 
 
