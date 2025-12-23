@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'
 import All from './pages/All'
-import Subreddit from './pages/Subreddit'
+import Subreddit from './pages/Subreddit/Subreddit'
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
 
@@ -11,9 +11,9 @@ function App() {
       <div>
         <Navbar />
         <Routes >
-          <Route path='/' Component={Home} />
-          <Route path='/all' Component={All} />
-          <Route path='/news' Component={Subreddit} />
+          <Route path='/' element={<Home />} />
+          <Route path='/all' element={<All />} />
+          <Route path='/:display_name' element={<Subreddit />} />
         </Routes>
       </div>
     </BrowserRouter>

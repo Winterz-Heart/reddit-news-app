@@ -17,7 +17,7 @@ export async function scrapeSubredditJson(subreddit, sort='hot', limit=100, time
                 id: post.id,
                 title: post.title,
                 author: post.author || '[deleted]',
-                created_utc: new Date(post.created_utc * 1000),
+                created_utc: post.created_utc,
                 score: post.score,
                 num_comments: post.num_comments,
                 url: post.url,

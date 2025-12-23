@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { getSubredditIcon } from "../API/scrapeSubredditIcon";
 
