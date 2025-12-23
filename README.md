@@ -53,7 +53,9 @@ With the wireframing done for the Website, I then made a Component tree in order
 ### Data from Reddit
 After looking at Reddits Devvit and ways to get the info from the website, the best method I can access is one that is refered to as Scraping, where you use the subreddits or posts web address and add ```.json``` to the end of it to get the data for the page. My best bet for the feeds part of my project would be to scrape the subreddits themselves for data for post cards (for example: https://www.reddit.com/r/news/top/?t=week.json) and when switching to an indvidual post, using the post id to access the post to scrape the posts data for all of the comments (for example: https://www.reddit.com/r/news/comments/1pk10fm.json).
 
-Whilst viewing r/news I realised that sorting it by top post of the past week, most of the time it prioritses older posts to be shwon as, the longer that they have been uploaded, to more upvotes they wil have gotten. A better way to sort the subreddits by hot, as orders the posts by the amount of engamenet that they have had, upvotes and comments, since they were posted.
+When setting up and testing the scrapers, I kept coming across CORS(Cross-Origin Resource Sharing) Errors. I order to get around these I have ended up needing to reroute my requests through corsproxy.io in order to get the data that I need.
+
+Whilst viewing r/news I realised that sorting it by top post of the past week, most of the time it prioritses older posts to be shown as, the longer that they have been uploaded, to more upvotes they wil have gotten. A better way to sort the subreddits by hot, as orders the posts by the amount of engamenet that they have had, upvotes and comments, since they were posted.
 
 ## Technologies used
 
