@@ -21,7 +21,6 @@ export async function scrapeSubredditJson(subreddit, sort='hot', limit=100, time
                 score: post.score,
                 num_comments: post.num_comments,
                 url: post.url,
-                selftext: post.selftext || '',
                 subreddit: post.subreddit,
                 permalink: `https://www.reddit.com${post.permalink}`
             })

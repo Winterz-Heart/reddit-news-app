@@ -1,14 +1,17 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { scrapeSubredditJson } from "../../API/scrapeSubredditJson";
+import { getSubredditIcon } from "../../API/scrapeSubredditIcon";
 
 export const fetchSubreddit = createAsyncThunk(
     "subreddit/fetchSubreddit",
     async (action) => {
-        const { subreddit } = action
-        const data = await scrapeSubredditJson(subreddit)
-        return data
+        const { subreddit } = action;
+        const data = await scrapeSubredditJson(subreddit);
+        const iconUrl = await getSubredditIcon(subreddit);
+        const postsWithIcon = data.map(post => ({ ...post, subredditIcon: iconUrl }));
+        return postsWithIcon;
     }
-)
+);
 
 const subredditSlice = createSlice({
     name: "subreddit",

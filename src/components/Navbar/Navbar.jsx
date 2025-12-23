@@ -70,7 +70,7 @@ function Navbar() {
                                     {subredditIcons[subreddit] ? (
                                         <img src={subredditIcons[subreddit]} alt={`${subreddit} icon`} style={{ width: 24, height: 24, borderRadius: '50%', marginRight: 8 }} />
                                     ) : (
-                                        <span style={{ width: 24, height: 24, display: 'inline-block', marginRight: 8 }}>⏳</span>
+                                        <AiIcons.AiOutlineReddit style={{ width: 24, height: 24, display: 'inline-block', marginRight: 8 }} />
                                     )}
                                     <span>| {subreddit}</span>
                                 </Link>

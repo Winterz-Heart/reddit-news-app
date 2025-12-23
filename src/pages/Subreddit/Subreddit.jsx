@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectSubreddit, fetchSubreddit } from "./SubredditSlice";
 import { useParams } from "react-router-dom";
+import PostCard from "../../components/PostCard/PostCard";
 
 function Subreddit() {
     const dispatch = useDispatch();
@@ -25,11 +26,17 @@ function Subreddit() {
                     <p>Loading</p>
                 ) : (
                     posts.map(post => (
-                        <div key={post.id} style={{ border: "1px solid #ccc", margin: "1em 0", padding: "1em" }}>
-                            <h2>{post.title}</h2>
-                            <p>by {post.author} | Score: {post.score} | Comments: {post.num_comments}</p>
-                            <p>{post.selftext}</p>
-                        </div>
+                        <PostCard
+                            subredditIcon={post.subredditIcon}
+                            id={post.id}
+                            title={post.title}
+                            author={post.author}
+                            created_utc={post.created_utc}
+                            score={post.score}
+                            num_comments={post.num_comments}
+                            url={post.url}
+                            subreddit={post.subreddit}
+                        />
                     ))
                 )}
             </section>
