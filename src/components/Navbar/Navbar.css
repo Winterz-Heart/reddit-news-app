@@ -8,6 +8,22 @@
 
 .menu-button {
     background: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 24px;
+    list-style: none;
+    height: 60px,
+}
+
+.menu-button-close {
+    background: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 16px 0px 8px 0px;
+    list-style: none;
+    height: 60px,
 }
 
 .nav-menu {
@@ -31,7 +47,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 8px 0px 8px 16px;
+    padding: 8px 0px 8px 0px;
     list-style: none;
     height: 60px,
 }

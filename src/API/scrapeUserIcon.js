@@ -2,11 +2,9 @@
 export async function getUserIcon(username) {
     if (username === '[deleted]') return null;
     const url = `https://www.reddit.com/user/${username}/about.json`
-    const headers = {
-        'User-Agent': 'Winterz-heart/User-Icon-Scraper'
-    }
+    const proxyUrl = 'https://corsproxy.io/?';
     try {
-        const response = await fetch(url, { headers });
+        const response = await fetch(proxyUrl + encodeURIComponent(url));
         if (!response.ok) {
             console.error(`Failed to fetch icon for ${username}: ${response.status} ${response.statusText}`);
             return null;

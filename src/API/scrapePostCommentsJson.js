@@ -2,9 +2,7 @@ import { getUserIcon } from "./scrapeUserIcon.js"
 
 export async function scrapePostComments(subreddit, postId) {
     const url = `https://www.reddit.com/r/${subreddit}/${postId}.json`;
-    const headers = {
-        'User-Agent': 'Winterz-heart/Post-Comments-Scraper'
-    }
+    const proxyUrl = 'https://corsproxy.io/?';
 
     // Go through the .json file to get the data from the comments. Done here so that it can go thorugh the replies to each comments as well 
     function processComment(commentData) {
@@ -46,7 +44,7 @@ export async function scrapePostComments(subreddit, postId) {
     
 
     try {
-        const response = await fetch(url, { headers })
+        const response = await fetch(proxyUrl + encodeURIComponent(url));
         const data = await response.json()
         const commentsData = data[1];
         const comments = []
